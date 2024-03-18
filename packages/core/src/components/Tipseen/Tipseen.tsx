@@ -200,6 +200,7 @@ const Tipseen: VibeComponent<TipseenProps> & {
           modifiers={modifiers}
           open={defaultDelayOpen ? delayedOpen : undefined}
           forceRenderWithoutChildren={floating}
+          layerClassName={styles.tipseenLayer}
         >
           {children}
         </Tooltip>

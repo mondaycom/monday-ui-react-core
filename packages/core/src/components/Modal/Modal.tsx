@@ -1,4 +1,4 @@
-import React, { cloneElement, FC, ReactElement, useCallback, useMemo } from "react";
+import React, { cloneElement, FC, ReactElement, useCallback, useMemo, useRef } from "react";
 import ReactDOM from "react-dom";
 import cx from "classnames";
 import { useA11yDialog } from "./a11yDialog";
@@ -12,6 +12,7 @@ import { withStaticProps } from "../../types";
 import { getTestId } from "../../tests/test-ids-utils";
 import { ComponentDefaultTestId } from "../../tests/constants";
 import styles from "./Modal.module.scss";
+import LayerProvider from "../LayerProvider/LayerProvider";
 
 export interface ModalProps {
   /**
@@ -72,6 +73,7 @@ export interface ModalProps {
    *  Dialog content
    */
   children?: ReactElement | ReactElement[];
+  // TODO: remove next major
   /**
    * z-index attribute of the container
    */
@@ -97,6 +99,7 @@ const Modal: FC<ModalProps> & { width?: typeof ModalWidth } = ({
   zIndex = 10000,
   "data-testid": dataTestId
 }) => {
+  const overlayRef = useRef(null);
   const childrenArray: ReactElement[] = useMemo(
     () => (children ? (React.Children.toArray(children) as ReactElement[]) : []),
     [children]
@@ -162,27 +165,31 @@ const Modal: FC<ModalProps> & { width?: typeof ModalWidth } = ({
       {...attr.container}
       className={cx(styles.container, classNames.container)}
       data-testid={dataTestId || getTestId(ComponentDefaultTestId.MODAL, id)}
+      // TODO: remove in next major
       style={{ "--monday-modal-z-index": zIndex }}
     >
-      {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}
-      <div
-        onClick={closeIfNotAlertType}
-        className={cx(styles.overlay, classNames.overlay)}
-        data-testid={ComponentDefaultTestId.MODAL_OVERLAY}
-      />
-      <div
-        {...attr.dialog}
-        className={cx(styles.dialog, classNames.modal, {
-          [styles.default]: width === ModalWidth.DEFAULT,
-          [styles.full]: width === ModalWidth.FULL_WIDTH,
-          [styles.spacing]: contentSpacing
-        })}
-        style={{ width: customWidth ? width : null }}
-      >
-        {header}
-        {content}
-        {footer}
-      </div>
+      <LayerProvider layerRef={overlayRef}>
+        {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}
+        <div
+          onClick={closeIfNotAlertType}
+          className={cx(styles.overlay, classNames.overlay)}
+          data-testid={ComponentDefaultTestId.MODAL_OVERLAY}
+          ref={overlayRef}
+        />
+        <div
+          {...attr.dialog}
+          className={cx(styles.dialog, classNames.modal, {
+            [styles.default]: width === ModalWidth.DEFAULT,
+            [styles.full]: width === ModalWidth.FULL_WIDTH,
+            [styles.spacing]: contentSpacing
+          })}
+          style={{ width: customWidth ? width : null }}
+        >
+          {header}
+          {content}
+          {footer}
+        </div>
+      </LayerProvider>
     </div>,
     document.body
   );
