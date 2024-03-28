@@ -33,6 +33,7 @@ import "monday-ui-style/dist/index.min.css";
 import "vibe-storybook-components/dist/index.css";
 import introCode from "../src/storybook/stand-alone-documentaion/playground/playground-helpers";
 import CanvasWrapper from "../src/CanvasWrapper";
+import LiveEditDecorator from "../src/LiveEditDecorator";
 
 const fontLoader = async () => ({
   fonts: await document.fonts.ready // Fixing Chromatic tests flakiness - taking snapshots after fonts are loaded
@@ -107,6 +108,7 @@ const preview: Preview = {
     }
   },
   decorators: [
+    LiveEditDecorator,
     (Story, { className }: { className: string }) => {
       return (
         <MultipleStoryElementsWrapper className={className}>
