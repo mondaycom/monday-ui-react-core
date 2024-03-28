@@ -1,0 +1,19 @@
+.editorContainer {
+  position: relative;
+  top: -40px;
+  width: 100%;
+  background: transparent;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.2s, opacity 0.2s ease;
+  overflow: auto;
+  border-radius: 0 0 4px 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px 0;
+  border: 1px solid hsla(203, 50%, 30%, 0.15);
+  border-top: none;
+
+  &[data-editor-open="true"] {
+    max-height: 500px;
+    opacity: 1;
+  }
+}
