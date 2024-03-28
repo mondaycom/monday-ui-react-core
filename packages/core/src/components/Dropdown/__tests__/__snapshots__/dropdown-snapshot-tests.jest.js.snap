@@ -40,6 +40,7 @@ exports[`Dropdown renders correctly snapshot driver should open menu on click if
             >
               <input
                 aria-autocomplete="list"
+                aria-controls="dropdown-menu-list-id"
                 aria-label="Dropdown input"
                 autocapitalize="none"
                 autocomplete="off"
@@ -90,15 +91,18 @@ exports[`Dropdown renders correctly snapshot driver should open menu on click if
       </div>
     </div>
     <div
+      aria-label="Dropdown menu"
       class="dropdownMenuWrapper withoutAnimation css-1ysewv0-menu"
+      id="dropdown-menu-list-id"
+      role="listbox"
     >
       <div
         class=" css-bknh9q-Component"
       >
         <div
+          aria-selected="false"
           class="optionReset css-1iwu591-option"
-          id="react-select-32-option-0"
-          tabindex="-1"
+          role="option"
         >
           <div
             class="valueContainer"
@@ -108,7 +112,9 @@ exports[`Dropdown renders correctly snapshot driver should open menu on click if
           </div>
         </div>
         <div
+          aria-selected="false"
           class="optionReset css-qj04r2-option"
+          role="option"
           id="react-select-32-option-1"
           tabindex="-1"
         >
@@ -120,7 +126,9 @@ exports[`Dropdown renders correctly snapshot driver should open menu on click if
           </div>
         </div>
         <div
+          aria-selected="false"
           class="optionReset css-6ztf41-option"
+          role="option"
           id="react-select-32-option-2"
           tabindex="-1"
         >
@@ -132,7 +140,9 @@ exports[`Dropdown renders correctly snapshot driver should open menu on click if
           </div>
         </div>
         <div
+          aria-selected="false"
           class="optionReset css-6ztf41-option"
+          role="option"
           id="react-select-32-option-3"
           tabindex="-1"
         >
@@ -144,7 +154,9 @@ exports[`Dropdown renders correctly snapshot driver should open menu on click if
           </div>
         </div>
         <div
+          aria-selected="false"
           class="optionReset css-6ztf41-option"
+          role="option"
           id="react-select-32-option-4"
           tabindex="-1"
         >
@@ -156,7 +168,9 @@ exports[`Dropdown renders correctly snapshot driver should open menu on click if
           </div>
         </div>
         <div
+          aria-selected="false"
           class="optionReset css-6ztf41-option"
+          role="option"
           id="react-select-32-option-5"
           tabindex="-1"
         >
@@ -213,6 +227,7 @@ exports[`Dropdown renders correctly snapshot driver should open menu on focus if
             >
               <input
                 aria-autocomplete="list"
+                aria-controls="dropdown-menu-list-id"
                 aria-label="Dropdown input"
                 autocapitalize="none"
                 autocomplete="off"
@@ -291,6 +306,7 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
             >
               <input
                 aria-autocomplete="list"
+                aria-controls="dropdown-menu-list-id"
                 aria-label="Dropdown input"
                 autocapitalize="none"
                 autocomplete="off"
@@ -369,6 +385,7 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
             >
               <input
                 aria-autocomplete="list"
+                aria-controls="dropdown-menu-list-id"
                 aria-label="Dropdown input"
                 autocapitalize="none"
                 autocomplete="off"
@@ -447,6 +464,7 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
             >
               <input
                 aria-autocomplete="list"
+                aria-controls="dropdown-menu-list-id"
                 aria-label="Dropdown input"
                 autocapitalize="none"
                 autocomplete="off"
@@ -525,6 +543,7 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
             >
               <input
                 aria-autocomplete="list"
+                aria-controls="dropdown-menu-list-id"
                 aria-label="Dropdown input"
                 autocapitalize="none"
                 autocomplete="off"
@@ -603,6 +622,7 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
             >
               <input
                 aria-autocomplete="list"
+                aria-controls="dropdown-menu-list-id"
                 aria-label="Dropdown input"
                 autocapitalize="none"
                 autocomplete="off"
@@ -681,6 +701,7 @@ exports[`Dropdown renders correctly snapshot driver should render correctly with
             >
               <input
                 aria-autocomplete="list"
+                aria-controls="dropdown-menu-list-id"
                 aria-label="Dropdown input"
                 autocapitalize="none"
                 autocomplete="off"
@@ -774,6 +795,7 @@ exports[`Dropdown renders correctly snapshot driver should use async if set 1`] 
             >
               <input
                 aria-autocomplete="list"
+                aria-controls="dropdown-menu-list-id"
                 aria-label="Dropdown input"
                 autocapitalize="none"
                 autocomplete="off"
@@ -881,6 +903,7 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
             >
               <input
                 aria-autocomplete="list"
+                aria-controls="dropdown-menu-list-id"
                 aria-label="Dropdown input"
                 autocapitalize="none"
                 autocomplete="off"
@@ -931,7 +954,10 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
       </div>
     </div>
     <div
+      aria-label="Dropdown menu"
       class="dropdownMenuWrapper withoutAnimation css-1ysewv0-menu"
+      id="dropdown-menu-list-id"
+      role="listbox"
     >
       <div
         class=""
@@ -945,7 +971,9 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
           >
             <div>
               <div
+                aria-selected="false"
                 class="optionReset css-1iwu591-option"
+                role="option"
                 id="react-select-29-option-0"
                 tabindex="-1"
               >
@@ -963,7 +991,9 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
           >
             <div>
               <div
+                aria-selected="false"
                 class="optionReset css-6ztf41-option"
+                role="option"
                 id="react-select-29-option-1"
                 tabindex="-1"
               >
@@ -981,7 +1011,9 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
           >
             <div>
               <div
+                aria-selected="false"
                 class="optionReset css-6ztf41-option"
+                role="option"
                 id="react-select-29-option-2"
                 tabindex="-1"
               >
@@ -999,7 +1031,9 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
           >
             <div>
               <div
+                aria-selected="false"
                 class="optionReset css-6ztf41-option"
+                role="option"
                 id="react-select-29-option-3"
                 tabindex="-1"
               >
@@ -1017,7 +1051,9 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
           >
             <div>
               <div
+                aria-selected="false"
                 class="optionReset css-6ztf41-option"
+                role="option"
                 id="react-select-29-option-4"
                 tabindex="-1"
               >
@@ -1035,7 +1071,9 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
           >
             <div>
               <div
+                aria-selected="false"
                 class="optionReset css-6ztf41-option"
+                role="option"
                 id="react-select-29-option-5"
                 tabindex="-1"
               >
@@ -1053,7 +1091,9 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
           >
             <div>
               <div
+                aria-selected="false"
                 class="optionReset css-6ztf41-option"
+                role="option"
                 id="react-select-29-option-6"
                 tabindex="-1"
               >
@@ -1071,7 +1111,9 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
           >
             <div>
               <div
+                aria-selected="false"
                 class="optionReset css-6ztf41-option"
+                role="option"
                 id="react-select-29-option-7"
                 tabindex="-1"
               >
@@ -1089,7 +1131,9 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
           >
             <div>
               <div
+                aria-selected="false"
                 class="optionReset css-6ztf41-option"
+                role="option"
                 id="react-select-29-option-8"
                 tabindex="-1"
               >
@@ -1107,7 +1151,9 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
           >
             <div>
               <div
+                aria-selected="false"
                 class="optionReset css-6ztf41-option"
+                role="option"
                 id="react-select-29-option-9"
                 tabindex="-1"
               >
@@ -1125,7 +1171,9 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
           >
             <div>
               <div
+                aria-selected="false"
                 class="optionReset css-6ztf41-option"
+                role="option"
                 id="react-select-29-option-10"
                 tabindex="-1"
               >
@@ -1178,6 +1226,7 @@ exports[`Dropdown renders correctly when disabled 1`] = `
           >
             <input
               aria-autocomplete="list"
+              aria-controls="dropdown-menu-list-id"
               aria-label="Dropdown input"
               autoCapitalize="none"
               autoComplete="off"
@@ -1366,6 +1415,7 @@ exports[`Dropdown renders correctly when rtl 1`] = `
           >
             <input
               aria-autocomplete="list"
+              aria-controls="dropdown-menu-list-id"
               aria-label="Dropdown input"
               autoCapitalize="none"
               autoComplete="off"
@@ -1483,6 +1533,7 @@ exports[`Dropdown renders correctly with autoFocus 1`] = `
           >
             <input
               aria-autocomplete="list"
+              aria-controls="dropdown-menu-list-id"
               aria-label="Dropdown input"
               autoCapitalize="none"
               autoComplete="off"
@@ -1785,6 +1836,7 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                 >
                   <input
                     aria-autocomplete="list"
+                    aria-controls="dropdown-menu-list-id"
                     aria-label="Dropdown input"
                     autoCapitalize="none"
                     autoComplete="off"
@@ -1932,6 +1984,7 @@ exports[`Dropdown renders correctly with className 1`] = `
           >
             <input
               aria-autocomplete="list"
+              aria-controls="dropdown-menu-list-id"
               aria-label="Dropdown input"
               autoCapitalize="none"
               autoComplete="off"
@@ -2055,6 +2108,7 @@ exports[`Dropdown renders correctly with defaultValue 1`] = `
           >
             <input
               aria-autocomplete="list"
+              aria-controls="dropdown-menu-list-id"
               aria-label="Dropdown input"
               autoCapitalize="none"
               autoComplete="off"
@@ -2198,6 +2252,7 @@ exports[`Dropdown renders correctly with empty props 1`] = `
           >
             <input
               aria-autocomplete="list"
+              aria-controls="dropdown-menu-list-id"
               aria-label="Dropdown input"
               autoCapitalize="none"
               autoComplete="off"
@@ -2315,6 +2370,7 @@ exports[`Dropdown renders correctly with id 1`] = `
           >
             <input
               aria-autocomplete="list"
+              aria-controls="dropdown-menu-list-id"
               aria-label="Dropdown input"
               autoCapitalize="none"
               autoComplete="off"
@@ -2520,6 +2576,7 @@ exports[`Dropdown renders correctly with leftAvatar 1`] = `
                 >
                   <input
                     aria-autocomplete="list"
+                    aria-controls="dropdown-menu-list-id"
                     aria-label="Dropdown input"
                     autoCapitalize="none"
                     autoComplete="off"
@@ -2749,6 +2806,7 @@ exports[`Dropdown renders correctly with leftIcon 1`] = `
                 >
                   <input
                     aria-autocomplete="list"
+                    aria-controls="dropdown-menu-list-id"
                     aria-label="Dropdown input"
                     autoCapitalize="none"
                     autoComplete="off"
@@ -2910,6 +2968,7 @@ exports[`Dropdown renders correctly with multi 1`] = `
                 >
                   <input
                     aria-autocomplete="list"
+                    aria-controls="dropdown-menu-list-id"
                     aria-label="Dropdown input"
                     autoCapitalize="none"
                     autoComplete="off"
@@ -3076,6 +3135,7 @@ exports[`Dropdown renders correctly with multi and disabled 1`] = `
                 >
                   <input
                     aria-autocomplete="list"
+                    aria-controls="dropdown-menu-list-id"
                     aria-label="Dropdown input"
                     autoCapitalize="none"
                     autoComplete="off"
@@ -3317,6 +3377,7 @@ exports[`Dropdown renders correctly with multiline 1`] = `
           >
             <input
               aria-autocomplete="list"
+              aria-controls="dropdown-menu-list-id"
               aria-label="Dropdown input"
               autoCapitalize="none"
               autoComplete="off"
@@ -3434,6 +3495,7 @@ exports[`Dropdown renders correctly with options 1`] = `
           >
             <input
               aria-autocomplete="list"
+              aria-controls="dropdown-menu-list-id"
               aria-label="Dropdown input"
               autoCapitalize="none"
               autoComplete="off"
@@ -3551,6 +3613,7 @@ exports[`Dropdown renders correctly with placeholder 1`] = `
           >
             <input
               aria-autocomplete="list"
+              aria-controls="dropdown-menu-list-id"
               aria-label="Dropdown input"
               autoCapitalize="none"
               autoComplete="off"
@@ -3668,6 +3731,7 @@ exports[`Dropdown renders correctly with tabIndex 1`] = `
           >
             <input
               aria-autocomplete="list"
+              aria-controls="dropdown-menu-list-id"
               aria-label="Dropdown input"
               autoCapitalize="none"
               autoComplete="off"
@@ -3794,6 +3858,7 @@ exports[`Dropdown renders correctly with tooltipContent 1`] = `
           >
             <input
               aria-autocomplete="list"
+              aria-controls="dropdown-menu-list-id"
               aria-label="Dropdown input"
               autoCapitalize="none"
               autoComplete="off"
@@ -3917,6 +3982,7 @@ exports[`Dropdown renders correctly with value 1`] = `
           >
             <input
               aria-autocomplete="list"
+              aria-controls="dropdown-menu-list-id"
               aria-label="Dropdown input"
               autoCapitalize="none"
               autoComplete="off"
@@ -4060,6 +4126,7 @@ exports[`Dropdown renders correctly without clear button 1`] = `
           >
             <input
               aria-autocomplete="list"
+              aria-controls="dropdown-menu-list-id"
               aria-label="Dropdown input"
               autoCapitalize="none"
               autoComplete="off"
