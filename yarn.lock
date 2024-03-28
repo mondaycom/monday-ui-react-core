@@ -5378,7 +5378,7 @@
     "@codemirror/state" "^6.0.0"
     "@codemirror/view" "^6.0.0"
 
-"@uiw/codemirror-extensions-langs@^4.21.21":
+"@uiw/codemirror-extensions-langs@^4.21.21", "@uiw/codemirror-extensions-langs@^4.21.25":
   version "4.21.25"
   resolved "https://registry.npmjs.org/@uiw/codemirror-extensions-langs/-/codemirror-extensions-langs-4.21.25.tgz#8e5f0215e0f763f3848349c9254d5d3cbe073563"
   integrity sha512-d+lJnY1pXC+dyhIZkTfsKtiizrtoWSDgSfT+OfvZC6Ga3IodEx0MtHi3MFA0P5xnReTqaKQebmwV87NPRxjHPg==
@@ -5411,7 +5411,23 @@
     "@replit/codemirror-lang-svelte" "^6.0.0"
     codemirror-lang-mermaid "^0.5.0"
 
-"@uiw/react-codemirror@^4.21.21":
+"@uiw/codemirror-theme-vscode@^4.21.25":
+  version "4.21.25"
+  resolved "https://registry.npmjs.org/@uiw/codemirror-theme-vscode/-/codemirror-theme-vscode-4.21.25.tgz#cf868c219e2ca8253dd2845e451c92920bea27ce"
+  integrity sha512-1gubCz7kHE5XH3H1IUTSrnyK/G3dQRmOIgPFsefE9e+TizhBJnkbKSDSfRfpm5l7jl1G7v/as0HQvN3cYg/Rkg==
+  dependencies:
+    "@uiw/codemirror-themes" "4.21.25"
+
+"@uiw/codemirror-themes@4.21.25":
+  version "4.21.25"
+  resolved "https://registry.npmjs.org/@uiw/codemirror-themes/-/codemirror-themes-4.21.25.tgz#562e7e4d36b34329858ffe9c9c06d7f50cfe0d3c"
+  integrity sha512-C3t/voELxQj0eaVhrlgzaOnSALNf8bOcRbL5xN9r2+RkdsbFOmvNl3VVhlxEB7PSGc1jUZwVO4wQsB2AP178ag==
+  dependencies:
+    "@codemirror/language" "^6.0.0"
+    "@codemirror/state" "^6.0.0"
+    "@codemirror/view" "^6.0.0"
+
+"@uiw/react-codemirror@^4.21.21", "@uiw/react-codemirror@^4.21.25":
   version "4.21.25"
   resolved "https://registry.npmjs.org/@uiw/react-codemirror/-/react-codemirror-4.21.25.tgz#1efb7737b907fde6f8f7552b5f43b33eec0b7a86"
   integrity sha512-mBrCoiffQ+hbTqV1JoixFEcH7BHXkS3PjTyNH7dE8Gzf3GSBRazhtSM5HrAFIiQ5FIRGFs8Gznc4UAdhtevMmw==
