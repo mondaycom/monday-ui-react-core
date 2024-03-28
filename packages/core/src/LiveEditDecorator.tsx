@@ -10,6 +10,7 @@ import { LivePreview, LiveProvider } from "react-live";
 
 const scope = { ...VibeComponents, VibeIcons, VibeNext: VibeComponentsNext };
 
+// @ts-ignore
 const LiveEditDecorator = (Story, { id, parameters, viewMode }) => {
   const originalCode = useRef(extract(parameters.docs.source?.originalSource) || "");
   const [code, setCode] = useState<string>(originalCode.current);
