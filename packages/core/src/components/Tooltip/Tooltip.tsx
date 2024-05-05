@@ -114,6 +114,7 @@ interface TooltipBaseProps extends VibeComponentProps {
    * set the state of the tooltip - open/close - controlled component
    */
   open?: boolean;
+  // TODO: remove next major
   /**
    * Overwrites z-index of the tooltip
    */
@@ -123,6 +124,7 @@ interface TooltipBaseProps extends VibeComponentProps {
    * Limit tooltip to 240px
    */
   withMaxWidth?: boolean;
+  layerClassName?: string;
   /**
    * The title of the tooltip
    */
@@ -164,7 +166,6 @@ export default class Tooltip extends PureComponent<TooltipProps> {
     disableDialogSlide: true,
     animationType: AnimationType.EXPAND,
     withoutDialog: false,
-    containerSelector: "#tooltips-container",
     tip: true,
     hideWhenReferenceHidden: false,
     modifiers: new Array<Modifier<unknown>>(),
@@ -186,7 +187,7 @@ export default class Tooltip extends PureComponent<TooltipProps> {
   }
 
   getContainer() {
-    return document.getElementById("tooltips-container") || document.querySelector("body");
+    return document.querySelector("body");
   }
 
   renderTooltipContent() {
@@ -305,6 +306,7 @@ export default class Tooltip extends PureComponent<TooltipProps> {
       tip,
       arrowClassName,
       id,
+      layerClassName,
       "data-testid": dataTestId
     } = this.props;
 
@@ -333,7 +335,8 @@ export default class Tooltip extends PureComponent<TooltipProps> {
       animationType: AnimationType.EXPAND,
       onDialogDidHide: this.onTooltipHide,
       onDialogDidShow: this.onTooltipShow,
-      getDynamicShowDelay: this.getShowDelay
+      getDynamicShowDelay: this.getShowDelay,
+      layerClassName: layerClassName || styles.tooltipLayer
     };
     return <Dialog {...dialogProps}>{children}</Dialog>;
   }

@@ -14,7 +14,7 @@ Array [
     onMouseLeave={[Function]}
   />,
   <span
-    className="monday-style-dialog-content-wrapper contentWrapper"
+    className="monday-style-dialog-content-wrapper contentWrapper tooltipLayer"
     data-popper-reference-hidden={false}
     data-testid="test"
     onClickCapture={[Function]}
@@ -66,7 +66,7 @@ Array [
     onMouseLeave={[Function]}
   />,
   <span
-    className="monday-style-dialog-content-wrapper contentWrapper"
+    className="monday-style-dialog-content-wrapper contentWrapper tooltipLayer"
     data-popper-reference-hidden={false}
     data-testid="tooltip"
     onClickCapture={[Function]}
@@ -118,7 +118,7 @@ Array [
     onMouseLeave={[Function]}
   />,
   <span
-    className="monday-style-dialog-content-wrapper contentWrapper"
+    className="monday-style-dialog-content-wrapper contentWrapper tooltipLayer"
     data-popper-reference-hidden={null}
     data-testid="tooltip"
     onClickCapture={[Function]}
@@ -170,7 +170,7 @@ Array [
     onMouseLeave={[Function]}
   />,
   <span
-    className="monday-style-dialog-content-wrapper contentWrapper"
+    className="monday-style-dialog-content-wrapper contentWrapper tooltipLayer"
     data-popper-reference-hidden={false}
     data-testid="tooltip"
     onClickCapture={[Function]}
@@ -222,7 +222,7 @@ Array [
     onMouseLeave={[Function]}
   />,
   <span
-    className="monday-style-dialog-content-wrapper contentWrapper"
+    className="monday-style-dialog-content-wrapper contentWrapper tooltipLayer"
     data-popper-reference-hidden={false}
     data-testid="tooltip"
     onClickCapture={[Function]}
@@ -274,7 +274,7 @@ Array [
     onMouseLeave={[Function]}
   />,
   <span
-    className="monday-style-dialog-content-wrapper contentWrapper"
+    className="monday-style-dialog-content-wrapper contentWrapper tooltipLayer"
     data-popper-reference-hidden={false}
     data-testid="tooltip"
     onClickCapture={[Function]}
@@ -331,7 +331,7 @@ Array [
     onMouseLeave={[Function]}
   />,
   <span
-    className="monday-style-dialog-content-wrapper contentWrapper"
+    className="monday-style-dialog-content-wrapper contentWrapper tooltipLayer"
     data-popper-reference-hidden={false}
     data-testid="tooltip"
     onClickCapture={[Function]}
@@ -391,7 +391,7 @@ Array [
     onMouseLeave={[Function]}
   />,
   <span
-    className="monday-style-dialog-content-wrapper contentWrapper"
+    className="monday-style-dialog-content-wrapper contentWrapper tooltipLayer"
     data-popper-reference-hidden={false}
     data-testid="tooltip"
     onClickCapture={[Function]}

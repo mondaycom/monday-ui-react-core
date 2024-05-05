@@ -39,6 +39,10 @@
   }
 }
 
+.dialogLayer {
+  z-index: var(--layer-popover);
+}
+
 .contentWrapper[data-popper-reference-hidden="true"] {
   visibility: hidden;
   pointer-events: none;

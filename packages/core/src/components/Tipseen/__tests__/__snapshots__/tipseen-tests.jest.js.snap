@@ -142,7 +142,7 @@ Array [
     onMouseLeave={[Function]}
   />,
   <span
-    className="monday-style-dialog-content-wrapper contentWrapper"
+    className="monday-style-dialog-content-wrapper contentWrapper tipseenLayer"
     data-popper-reference-hidden={false}
     data-testid="tooltip"
     onClickCapture={[Function]}
@@ -231,7 +231,7 @@ Array [
 
 exports[`Snapshot tests Tipseen tests renders correctly with floating variation 1`] = `
 <span
-  className="monday-style-dialog-content-wrapper contentWrapper"
+  className="monday-style-dialog-content-wrapper contentWrapper tipseenLayer"
   data-popper-reference-hidden={false}
   data-testid="tooltip"
   onClickCapture={[Function]}
@@ -320,7 +320,7 @@ Array [
     onMouseLeave={[Function]}
   />,
   <span
-    className="monday-style-dialog-content-wrapper contentWrapper"
+    className="monday-style-dialog-content-wrapper contentWrapper tipseenLayer"
     data-popper-reference-hidden={false}
     data-testid="tooltip"
     onClickCapture={[Function]}
@@ -380,7 +380,7 @@ Array [
     onMouseLeave={[Function]}
   />,
   <span
-    className="monday-style-dialog-content-wrapper contentWrapper"
+    className="monday-style-dialog-content-wrapper contentWrapper tipseenLayer"
     data-popper-reference-hidden={false}
     data-testid="tooltip"
     onClickCapture={[Function]}
@@ -440,7 +440,7 @@ Array [
     onMouseLeave={[Function]}
   />,
   <span
-    className="monday-style-dialog-content-wrapper contentWrapper"
+    className="monday-style-dialog-content-wrapper contentWrapper tipseenLayer"
     data-popper-reference-hidden={false}
     data-testid="tooltip"
     onClickCapture={[Function]}
