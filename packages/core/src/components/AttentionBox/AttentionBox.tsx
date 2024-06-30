@@ -54,18 +54,6 @@ const AttentionBox: React.FC<AttentionBoxProps> & {
   "data-testid": dataTestId,
   closeButtonAriaLabel = "Close"
 }) => {
-  const iconLabel = useMemo(() => {
-    if (type === AttentionBoxType.DANGER) {
-      return "alert";
-    }
-
-    if (type === AttentionBoxType.SUCCESS) {
-      return "success";
-    }
-
-    return "attention";
-  }, [type]);
-
   const defaultIcon = useMemo(() => {
     return type === AttentionBox.types.PRIMARY ? InfoIcon : AlertIcon;
   }, [type]);
@@ -90,11 +78,9 @@ const AttentionBox: React.FC<AttentionBoxProps> & {
               className={styles.icon}
               iconType={iconType}
               ariaHidden
-              clickable={false}
               icon={overrideIcon}
               ignoreFocusStyle
               iconSize="20"
-              iconLabel={iconLabel}
             />
           )}
           <Text type={Text.types.TEXT1} element="h5" weight={Text.weights.MEDIUM} className={styles.title}>
@@ -104,15 +90,7 @@ const AttentionBox: React.FC<AttentionBoxProps> & {
       )}
       <Flex justify={Flex.justify.START} align={Flex.align.CENTER} gap={Flex.gaps.XS}>
         {!title && compact && !withoutIcon && withIconWithoutHeader && (
-          <Icon
-            iconType={iconType}
-            iconSize={18}
-            ariaHidden
-            clickable={false}
-            icon={overrideIcon}
-            ignoreFocusStyle
-            iconLabel={iconLabel}
-          />
+          <Icon iconType={iconType} iconSize={18} ariaHidden icon={overrideIcon} ignoreFocusStyle />
         )}
         <Text
           type={Text.types.TEXT2}
